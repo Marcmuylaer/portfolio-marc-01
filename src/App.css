@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Rajdhani:wght@300&family=Roboto+Condensed&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+:root{
+  --primary-white     : #ffffff;
+  --primary-light-grey: #f4f4f4;
+  --primary-grey      : #ccd1d9;
+  --primary-dark-grey : #666666;
+  --primary-orange    : #f9ab00;
+  --primary-dark      : rgb(52, 58, 64);
+  --primary-red       : #ef4035;
+  --primary-hover-red : #f33501;
+  --primary-black     : #000000;
+  --primary-transparent-black : rgba(0, 0, 0, 0.7);
+  --primary-font-family       : 'Rajdhani', sans-serif;
+  --primary-header-font-family: 'Abril Fatface', cursive;
+  --primary-green             : rgb(21, 99, 7);
+  --primary-hover-green       : rgb(66, 97, 22); 
+  --primary-blue              : rgba(19, 136, 232);
+  --secondary-black           : rgb(76, 76, 76);
+  --primary-gray              : rgb(184, 184, 184); 
+}
+
+body{
+     font-family   : 'roboto condesed', sans-serif !important ;
+     max-width     : 100% !important;
+     height        : 100% !important;
+     margin        : 0px  !important;
+     padding       : 0px  !important;
+     overflow-x    : hidden;   
+}
+
+/********************NAVBAR********************/
+
+.wolf {
+  width: 7.25rem;
+}
+
+nav {
+      z-index   : 2;  /* padding: 0px !important; */
+      max-width : 100% !important;
+      overflow-x: hidden; 
+}
+
+.navbar-style {
+  left    : 0;
+  right   : 0;
+  position: fixed !important;
+  padding : 2em;
+  top     : 0%;
+  padding : 2em;
+}
+
+@media only screen and (max-width: 676px) {
+  .wolf {
+    width      : 5rem;
+    padding-top: 1rem;
+  }
+  }
+
+/* ------- Menu links  -----*/
+
+nav Link.nav-link {
+            
+  font-weight    : 500;
+  letter-spacing : 0.0375rem;
+  cursor         : pointer;
+
+}
+
+nav ul li {
+  text-transform :  uppercase;
+  font-family    : var(--primary-header-font-family);
+
+}
+
+.navbar-nav > li > a {
+  color       : var(--primary-white) !important;
+  margin-right: 0.75rem;
+  margin-left : 0.75rem;
+  border-top  : 0.1875rem solid var(--primary-dark);
+
+}
+
+.navbar-brand {
+   max-width: 17.25rem;
+   padding  : 0 !important;
+   height   : 6rem !important;
+
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    width: 7rem;
+  }
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+  border-top: 0.1875rem solid var(--primary-orange);                                                              
+}
+
+.navbar-nav > li > a:hover{
+   border-top: 0.1875rem solid var(--primary-orange);
+} 
+
+@media(max-width: 768px) {
+  .navbar-brand {
+    width: 7rem;
+  }
+}
+
+/********************Header******************/
+
+.header-wrapper {
+                position           : relative;
+                background         : url('computer-bg.jpg') no-repeat;
+                background-size    : cover ;
+                background-position: center;
+                height             : 90vh;
+                max-width          : 100% !important;
+                overflow-x         : hidden;  
+                } 
+
+.main-info {
+            display        :flex;
+            position       : absolute;
+            top            :0;
+            left           :0;
+            right          :0;
+            bottom         :0;
+            flex-direction : column; 
+            justify-content: center;
+            align-items    : center;
+            text-align     : center;
+            font-family    : 'roboto condesed', sans-serif;
+            z-index        : 1;
+
+          }
+
+.main-info h1 {
+               color         : var(--primary-orange);
+               text-transform: uppercase;
+} 
+
+@media(max-width: 768px){
+  .main-info h1{
+    font-size: 1.7rem !important;
+  }
+  .typed-text{
+    font-size: 2rem !important;
+
+  }
+}
+
+/********************Typed text****************/
+
+.typed-text { 
+             font-size : 2rem;
+             color     : var(--primary-white);                            
+}
+
+@media (max-width: 768px) {
+  .main-info h1 {
+    font-size: 1.7rem !important;
+  }
+  .typed-text {
+    font-size: 1.3rem !important;
+  }
+}
+
+/* -------- Main Offer Button -------- */
+
+.btn-main-offer {
+
+          border        : 1px solid var(--primary-red);
+          text-transform: uppercase;
+          border-radius : 0;
+          padding       : 0.625rem 0.75rem 0.75rem ;
+          color         : var(--primary-white);
+          margin        : 2rem;
+}
+
+.btn-main-offer:hover {
+          text-decoration : none;
+          background-color: var(--primary-hover-red);
+          color           : var(--primary-white);
+          transition      : .2s ease-in-out;
+}
+
+/********************Particles js****************/
+
+ .tsparticles-canvas-el {
+          position : absolute;
+          height   :100vh;
+          width    :100vh;
+          z-index  : 1;
+ }
+
+ @media(max-width: 768px){
+        .particles-canvas {
+           display: none;      
+        }
+ }
+
+ /*********** About Me *****************/
+
+.about-me {
+  color: var(--primary-white);
+  background-color: var(--secondary-black);
+  text-align     : center;
+  font-family    : "Roboto Condensed", sans-serif;
+  padding-top    : 4rem;
+  padding-bottom : 4rem;
+  max-width      : 100% !important;
+  overflow-x     : hidden; 
+}
+
+.about-me a img {
+  width      : 4rem;
+  transition : all 0.3s ease;
+  position   : relative;
+  height     : 4.12rem !important;
+}
+
+.about-me a img:hover {
+  width: 4.8rem;
+  height: 4.6rem !important;
+}
+
+
+.aboutMe-title {
+  font-family: 'Russo One', sans-serif;
+}
+
+.profile-picture {
+  width      : 30rem;
+  box-shadow : 0.125rem 0.125rem 0.125rem 0.125rem #23292E;
+}
+
+/* For different mobile Responsiveness */
+@media (max-width: 768px) {
+  .profile-picture {
+    width: 20rem;
+  }
+  .about-me a img {
+    width      : 2rem;
+    height     : 2.2rem !important;
+    transition : all 0.3s ease;
+    position   : relative;
+  }
+  
+  .about-me a img:hover {
+    width   : 2.3rem;
+    height  : 2.5rem !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .profile-picture {
+    width: 40rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-picture {
+    width: 30rem;
+  }
+}
+
+@media (max-width: 525px) {
+  .profile-picture {
+    width: 25rem;
+  }
+}
+
+@media (max-width: 499px) {
+  .profile-picture {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-me-text {
+    font-size: 0.85rem !important;
+  }
+}
+
+/* ******************* Portfolio ******************* */
+
+ .portfolio-wraper {
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: var(--primary-black);
+  color: var(--primary-white);
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  max-width: 100% !important;
+  /* height: 100% !important; */
+  /* margin: 0px !important; */
+  /* padding: 0px !important; */
+  overflow-x: hidden; 
+}
+
+.portfolio-title {
+  font-family: 'Russo One', sans-serif;
+}
+
+.card-container {
+  color: var(--primary-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-p {
+  color: rgb(175, 171, 171) !important;
+}
+
+.img-thumbnail {
+  width: 2.125rem;
+}
+
+
+/* ******************* Contact me  ******************* */
+
+.contact-wraper {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color:rgb(30, 97, 160);
+  text-align: center;
+  max-width: 100% !important;
+  overflow-x: hidden; 
+}
+
+.contact-title {
+  font-family: 'Russo One', sans-serif;
+}
+
+
+@media (max-width: 499px) {
+ .contact-info p {
+   font-size: 1.8rem !important;
+ }
+}
+
+/* -------- Social Container -------- */
+
+.social-container {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.social-container h1{
+  font-family: 'Russo One', sans-serif;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.social-container img {
+  width: 3.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.social-container img:hover {
+  width: 4rem;
+}
