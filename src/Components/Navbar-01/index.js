@@ -7,7 +7,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 // React Scroll
 import { Link } from "react-scroll";
 
-function Navbar  () {
+const Navbar = ()  => {
   const [navbar,setNavbar] = userState(false);
   const changeBackground = () => {
      if (window.scrolly >= 80) {
