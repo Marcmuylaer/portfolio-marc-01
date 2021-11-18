@@ -13,29 +13,36 @@ const Experiences = [
   {
     title: " Analyst Programmer ",
     place: "Tobania for BNP Paribas ",
-    date: "2017-2020",
-    description: "Some of my best three years growing in confidence and leadership Skills",
+    date: "2018-2019",
+    description: "Daily management credit card and debit card (hello , maestro , visa , ...) ",
     logo: logo
   },
   {
     title: " Analyst Progammer ",
     place: "Accenture for BNp Paribas / NN insurance ",
-    date: "2014-2017",
-    description: "3 Years Experience with repairing automobiles and costumer service",
+    date: "2015-2016",
+    description: "Carrying out technical analyzes for the sequoia project, ...",
     logo: logo
   },
   {
-    title: "",
-    place: "Joliet Central High School",
-    date: "2010-2014",
-    description: "Spent my High School life exploring options, took A+ Certification, intro to Visual Basic Code, and other engineering classes.",
+    title: " Analyst Progammer ",
+    place: "Expert-team for BNp Paribas",
+    date: "2013-2015",
+    description: "Realization of projects  for Security , guide , card , ...",
     logo: logo
   },
   {
-    title: "Computer Repair",
-    place: "Hobby",
-    date: "2010-2014",
-    description: "On my spare time I liked fixing Machintosh Computers",
+    title: " Analyst Progammer ",
+    place: " Ordina for BNp Paribas ",
+    date: "2006-2012",
+    description: "Realization of projects  for back-office ,...",
+    logo: logo
+  },
+  {
+    title: " and many other adventures...  ",
+    place: " Gestionique , Beaver , Axialog , Admiral, ... ",
+    date: "1995-2012",
+    description: "Realization of projects ,...",
     logo: logo
   },
 ];
